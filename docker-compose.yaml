@@ -1,16 +1,12 @@
 version: '3'
 services:
   frontend:
-    build:
-      context: ./Webduality-Frontend/
-      dockerfile: Dockerfile
+    image: tyagisarthak/mern-frontend:latest
     ports:
       - "3000:80"
 
   backend:
-    build:
-      context: ./Webduality-Backend/
-      dockerfile: Dockerfile
+    image: tyagisarthak/mern-backend:latest
     ports:
       - "8000:8000"
     environment:
